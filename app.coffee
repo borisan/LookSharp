@@ -1,5 +1,5 @@
 express = require 'express'
-routes = require 'routes'
+routes = require './routes'
 user = require './routes/user'
 http = require 'http'
 path = require 'path'
@@ -18,7 +18,7 @@ app.configure ->
   app.use express.static(path.join(__dirname, 'public'))
 
 app.configure 'development', ->
-  app.use express.errorHandler())
+  app.use express.errorHandler()
 
 app.get '/', routes.index
 app.get '/users', user.list
