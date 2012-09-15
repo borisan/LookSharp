@@ -1,3 +1,3 @@
 $(function() {
-  $( "#tabs" ).tabs({ fx: { opacity: 'toggle'}});
+  $( "#tabs" ).tabs({ fx: { opacity: 'toggle', duration: 150}});
 });
