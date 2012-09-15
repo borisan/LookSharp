@@ -3,8 +3,11 @@ html
   head
     title= title
     link(rel='stylesheet/less', href='/stylesheets/style.less')
+    block customCSS
     script(src='/javascripts/less.js')
   body
     block nav
     block content
     block customJS
+    block content
+
