@@ -2,13 +2,16 @@ doctype 5
 html
   head
     title= title
-    link(rel='stylesheet/less', href='/stylesheets/style.less')
+    link(rel='stylesheet/less', href='/stylesheets/less/style.less')
+    link(rel='stylesheet', href='/stylesheets/css/ui-lightness/jquery-ui-1.8.23.custom.css')
     block customCSS
     script(src='/javascripts/less.js')
+    script(src='/javascripts/jquery-1.8.0.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js')
+    script(src='/javascripts/custom/custom.js')
   body
-    div.nav
+    div#tabs
       include nav
     block content
-    block customJS
-    block content
+    
 
