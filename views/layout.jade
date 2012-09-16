@@ -1,10 +1,11 @@
 doctype 5
 html
   head
-    title= title
+    title= "Look Sharp"
     link(rel='stylesheet/less', href='/stylesheets/less/style.less')
     link(rel='stylesheet', href='/stylesheets/css/ui-lightness/jquery-ui-1.8.23.custom.css')
-    link(href='http://fonts.googleapis.com/css?family=Open+Sans',rel='stylesheet',type='text/css')
+    link(rel='icon', href='/media/lookSharpPic.jpeg', type="image/gif", sizes="16x16")
+    link(href='http://fonts.googleapis.com/css?family=Raleway+Dots',rel='stylesheet',type='text/css')
     block customCSS
     script(src='/javascripts/less.js')
     script(src='/javascripts/jquery-1.8.0.min.js')
@@ -12,7 +13,9 @@ html
     script(src='/javascripts/custom/custom.js')
   body
     div#page-container
-      include about 
+      div#top-portion-container
+        include about 
+      
 
 
 

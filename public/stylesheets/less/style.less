@@ -17,8 +17,7 @@
 
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-color: @body-color;
+  background-image:url('/media/maroonBackground.jpeg');
 
   #page-container{
     margin-left:auto;
@@ -28,25 +27,40 @@ body {
     background-image:url('/media/red_solid.jpeg');
     border:3px solid white;
 
-    #left-photo-container{
-      width:40%;
-      margin-left:50px;
-      margin-top:25px;
-      position:absolute;
+    #top-portion-container{
+      position: absolute;
+      width: 75%;
+    
 
-      img{
-        max-width:300px;
-        max-height:1000px;
-        .rotate;
+     #left-photo-container{
+        width:35%;
+        margin-left:50px;
+        margin-top:25px;
+        position:absolute;
+
+          img{
+            max-width:300px;
+            max-height:1000px;
+            .rotate;
+          }
+          p{
+            font-size:30px;
+            color:white;
+            text-align:center;
+            font-family: 'Raleway Dots', cursive;
+            .rotate;
+            margin-top: 10px;
+            margin-right: 10px;
+
+           }
       }
       
     }
 
     #photo-desc-container{
-      width:40%;
+      width:35%;
       margin-right:25px;
       margin-top:25px;
-      font-family: 'Open Sans', sans-serif;
       float:right;
       img{
           border: 10px solid white;
@@ -57,6 +71,12 @@ body {
       p{
         font-size:30px;
         color:white;
+        text-align:center;
+        font-family: 'Raleway Dots', cursive;
+        .rotate(4deg);
+        margin-top: 10px;
+        margin-right: 40px;
+
       }
     }
     
