@@ -1,0 +1,96 @@
+@body-color: #5d2b05;
+@page-container-color:#cd5f0c;
+
+.box-shadow(@shadow:0 0 2px 10px #eee) {
+  box-shadow: @shadow;
+  -webkit-box-shadow: @shadow;
+  -moz-box-shadow: @shadow;
+}
+
+.rotate(@deg:-4deg){
+  transform:rotate(@deg);
+  -ms-transform:rotate(@deg); 
+  -moz-transform:rotate(@deg); 
+  -webkit-transform:rotate(@deg); 
+  -o-transform:rotate(@deg); 
+}
+
+body {
+  padding: 50px;
+  background-image:url('/media/maroonBackground.jpeg');
+
+  #page-container{
+    margin-left:auto;
+    margin-right:auto;
+    margin: 0 auto;
+    width:56%;
+    height:600px;
+    background-image:url('/media/red_solid.jpeg');
+    border:3px solid white;
+
+    #top-portion-container{
+      position: absolute;
+      width: 58%;
+    
+
+     #left-photo-container{
+        width:27%;
+        margin:auto;
+        position:absolute;
+        margin-left: -5%;
+        margin-top: -5%;
+
+          img{
+            max-width:300px;
+            max-height:1000px;
+            .rotate;
+          }
+          p{
+            font-size:30px;
+            color:white;
+            text-align:center;
+            margin:auto;
+            font-family: 'Raleway Dots', cursive;
+            .rotate;
+           }
+      }
+      
+    #about-title-container{
+      margin:auto;
+      width:35%;
+        p{
+        font-size:30px;
+        color:white;
+        text-align:center;
+        margin:auto;
+        font-family: 'Raleway Dots', cursive;
+      }
+    }
+
+    #photo-desc-container{
+      width:35%;
+     margin-right: -5%;
+     margin-top: -5%;
+      float:right;
+      img{
+          border: 10px solid white;
+          max-width:300px;
+          max-height:400px;
+          .rotate(4deg);
+      }
+      p{
+        font-size:30px;
+        color:white;
+        text-align:center;
+        font-family: 'Raleway Dots', cursive;
+        .rotate(4deg);
+        margin-top: 10px;
+        margin-right: 40px;
+
+      }
+    }
+    
+}
+  }
+}
+
